@@ -25,10 +25,10 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="homepage.html#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="homepage.html#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="homepage.html#berita">Berita Acara</a></li>
-                    <li><a class="nav-link scrollto " href="homepage.html#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.html.html#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="index.html.html#berita">Berita Acara</a></li>
+                    <li><a class="nav-link scrollto " href="index.html.html#contact">Contact</a></li>
                     <li><a class="login scrollto" href="login.html">Login</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -39,9 +39,10 @@
 
     <!-- ======= Konten ======= -->
     <div class="konten pengajuan">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex row justify-content-between">
             <div class="col-6 d-grid form">
-                <h5 class="title">Form Pengajuan Surat Keterangan A</h5>
+                <h5 class="title">Form Pengajuan</h5>
+                <h6 id="namaSurat"></h6>
 
                 <label for="input-1">No KTP/NIK Pemohon</label>
                 <input type="text" class="input-1" placeholder="Masukkan nomor NIK Anda">
@@ -52,22 +53,26 @@
                 <label for="input-1">Keperluan</label>
                 <input type="text" class="input-1" placeholder="Masukkan keperluan Anda">
 
-                <button class="btn btn-lihat" id="submit">Submit</button>
+                <button class="btn btn-submit" id="submit">Submit</button>
             </div>
 
-            <div class="list-surat d-flex">
-                <div class="left">
-                    <div id="item-surat1" class="item-surat">Surat Waris</div>
-                    <div id="item-surat2" class="item-surat">Surat Keterangan Domisili</div>
-                    <div id="item-surat3" class="item-surat">Surat Keterangan Kematian</div>
-                    <div id="item-surat4" class="item-surat">Surat Keterangan Kelahiran</div>
+            <div class="col-lg-5 list-surat">
+                <h6 class="text-center">Pilih Jenis Surat</h6>
+                <div class="row">
+                    <div class="col-lg-6 left">
+                        <div id="item-surat1" class="item-surat" onclick="onClickSurat1()">Surat Waris</div>
+                        <div id="item-surat2" class="item-surat" onclick="onClickSurat2()">Surat Keterangan Domisili</div>
+                        <div id="item-surat3" class="item-surat" onclick="onClickSurat3()">Surat Keterangan Kematian</div>
+                        <div id="item-surat4" class="item-surat" onclick="onClickSurat4()">Surat Keterangan Kelahiran</div>
+                    </div>
+                    <div class="col-lg-6 right">
+                        <div id="item-surat5" class="item-surat" onclick="onClickSurat5()">Surat Keterangan Penghasilan</div>
+                        <div id="item-surat6" class="item-surat" onclick="onClickSurat6()">Surat Pernyataan Tidak Sengketa</div>
+                        <div id="item-surat7" class="item-surat" onclick="onClickSurat7()">Surat Pengantar SKCK</div>
+                        <div id="item-surat8" class="item-surat" onclick="onClickSurat8()">Surat Pengantar Izin Keramaian</div>
+                    </div>
                 </div>
-                <div class="right">
-                    <div id="item-surat5" class="item-surat">Surat Keterangan Penghasilan</div>
-                    <div id="item-surat6" class="item-surat">Surat Pernyataan Tidak Sengketa</div>
-                    <div id="item-surat7" class="item-surat">Surat Pengantar SKCK</div>
-                    <div id="item-surat8" class="item-surat">Surat Pengantar Izin Keramaian</div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -105,9 +110,38 @@
             })
         })
 
-        // document.getElementById('item-surat2').addEventListener('click', () => {
-            
-        // })
+        function onClickSurat1(){
+            document.querySelector('#namaSurat').innerHTML = '<h6>Surat Waris</h6>';
+            namaSurat.style.cssText = "text-align: center;";
+        }
+        function onClickSurat2(){
+            document.querySelector('#namaSurat').innerHTML = '<h6>Surat Keterangan Domisili</h6>';
+            namaSurat.style.cssText = "text-align: center;";
+        }
+        function onClickSurat3(){
+            document.querySelector('#namaSurat').innerHTML = '<h6>Surat Keterangan Kematian</h6>';
+            namaSurat.style.cssText = "text-align: center;";
+        }
+        function onClickSurat4(){
+            document.querySelector('#namaSurat').innerHTML = '<h6>Surat Keterangan Kelahiran</h6>';
+            namaSurat.style.cssText = "text-align: center;";
+        }
+        function onClickSurat5(){
+            document.querySelector('#namaSurat').innerHTML = '<h6>Surat Keterangan Penghasilan</h6>';
+            namaSurat.style.cssText = "text-align: center;";
+        }
+        function onClickSurat6(){
+            document.querySelector('#namaSurat').innerHTML = '<h6>Surat Pernyataan Tidak Sengketa</h6>';
+            namaSurat.style.cssText = "text-align: center;";
+        }
+        function onClickSurat7(){
+            document.querySelector('#namaSurat').innerHTML = '<h6>Surat Pengantar SKCK</h6>';
+            namaSurat.style.cssText = "text-align: center;";
+        }
+        function onClickSurat8(){
+            document.querySelector('#namaSurat').innerHTML = '<h6>Surat Pengantar Izin Keramaian</h6>';
+            namaSurat.style.cssText = "text-align: center;";
+        }
       </script>
 </body>
 

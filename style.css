@@ -134,7 +134,7 @@ section {
     background: #092C4C;
     padding: 8px 25px;
     margin-left: 30px;
-    border-radius: 50px;
+    border-radius: 15px;
     color: #fff;
     text-decoration: none;
   }
@@ -665,15 +665,28 @@ section {
     margin-top: 8px;
   }
 
+  .btn-submit{
+    background-color: #092C4C;
+    color: white;
+    margin-top: 2em;
+    border-radius: 15px;
+  }
+
+  .btn-submit:hover{
+    background-color: #f88520;
+    color: white;
+  }
+
   .list-surat {
-    margin: 50px 0;
+    margin: 100px 0;
+    /* padding: 0 30px; */
   }
 
   .item-surat {
     color: #092C4C;
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin: 20px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #092C4C;
     font-size: 0.8em;
   }
