@@ -25,11 +25,10 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+          <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
           <li><a class="nav-link scrollto" href="#berita">Berita Acara</a></li>
-          <li><a class="nav-link scrollto " href="#contact">Contact</a></li>
-          <li><a class="login scrollto" href="#about">Login</a></li>
+          <li><a class="login scrollto" href="login.html">Masuk</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -49,7 +48,7 @@
             surat pengantar, dan lain-lain ke Kelurahan melalui sistem pelayanan administrasi secara online.
           </p>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="get-letter.html" class="btn-get-started scrollto">Unduh Surat</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
@@ -65,35 +64,47 @@
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
+        <h2>Layanan</h2>
+        <p>Silahkan mengajukan surat kepada kelurahan sesuai kebutuhan Anda</p>
       </div>
 
       <div class="row">
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-4 align-items-stretch  mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi</p>
+            <div class="icon"><ion-icon class="item-icon" name="mail-outline"></ion-icon></div>
+            <h4 class="title"><a href="form-pengajuan.html">Kasi Tata Pemerintahan</a></h4>
+            <ul class="description mb-4">
+              <li>Surat Keterangan Pindah</li>
+              <li>Surat Keterangan Domisili</li>
+              <li>Surat Keterangan Penghasilan</li>
+              <li>dst.</li>
+            </ul>
+            <a class="btn btn-lanjutLayanan" href="form-pengajuan.html">Lanjutkan</a>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-4 align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            </p>
+            <div class="icon"><ion-icon class="item-icon" name="mail-outline"></ion-icon></div>
+            <h4 class="title"><a href="">Kasi Kesejahteraan dan Sosial</a></h4>
+            <ul class="description description-2 mb-4">
+              <li>Surat Keterangan Tidak Mampu</li>
+              <li>Surat Keterangan Nikah</li>
+              <li>Surat Keterangan Belum Punya Rumah</li>
+            </ul>
+            <a class="btn btn-lanjutLayanan" href="form-pengajuan.html">Lanjutkan</a>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="col-md-6 col-lg-4 align-items-stretch mb-5 mb-lg-0">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-            </p>
+            <div class="icon"><ion-icon class="item-icon" name="mail-outline"></ion-icon></div>
+            <h4 class="title"><a href="">Kasi Pembangunan dan Lingkungan Hidup</a></h4>
+            <ul class="description description-3 mb-4">
+              <li>Pelaksanaan Musrenbang</li>
+              <li>Pelaksanaan Pembangunan (Warga)</li>
+            </ul>
+            <a class="btn btn-lanjutLayanan" href="form-pengajuan.html">Lanjutkan</a>
           </div>
         </div>
 
@@ -103,77 +114,112 @@
   </section><!-- End Services Section -->
 
   <!-- ======= Berita Acara Section ======= -->
-  <section id="berita" class="portfolio">
+  <section id="berita" class="more-services">
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
         <h2>Berita Acara</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
       </div>
 
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+      <div class="container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/berita1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Judul Berita</h4>
-              <p>More...</p>
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card" style='background-image: url("img/berita.jpeg");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Kali pertama deklarasi Kudaile Layak Anak</a></h5>
+                <p class="tgl">25 November 2022</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i>Selanjutnya</a></div>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="card" style='background-image: url("img/berita1.jpg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Kali pertama deklarasi Kudaile Layak Anak</a></h5>
+                <p class="tgl">25 November 2022</p>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i>Selanjutnya</a></div>
+              </div>
+            </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/berita1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Judul Berita</h4>
-              <p>More...</p>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
+            <div class="card" style='background-image: url("img/berita1.jpg");' data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Kali pertama deklarasi Kudaile Layak Anak</a></h5>
+                <p class="tgl">25 November 2022</p>
+                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i>Selanjutnya</a></div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/berita1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Judul Berita</h4>
-              <p>More...</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/berita1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Judul Berita</h4>
-              <p>More...</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/berita1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Judul Berita</h4>
-              <p>More...</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/berita1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Judul Berita</h4>
-              <p>More...</p>
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
+            <div class="card" style='background-image: url("img/berita2.jpeg");' data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Kali pertama deklarasi Kudaile Layak Anak</a></h5>
+                <p class="tgl">25 November 2022</p>
+                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
+                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i>Selanjutnya</a></div>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
+
+      <!-- <div class="row konten-berita">
+        <div class="left-berita col-7">
+          <div class="card">
+            <img src="img/berita.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kali pertama deklarasi Kudaile Layak Anak</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-read">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="right-berita col-5">
+          <div class="card" style="width: 100%;">
+            <img src="img/berita.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kali pertama deklarasi Kudaile Layak Anak</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-read">Read More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 100%;">
+            <img src="img/berita.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kali pertama deklarasi Kudaile Layak Anak</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-read">Read More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 100%;">
+            <img src="img/berita.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kali pertama deklarasi Kudaile Layak Anak</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-read">Read More</a>
+            </div>
+          </div>
+          <div class="card" style="width: 100%;">
+            <img src="img/berita.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kali pertama deklarasi Kudaile Layak Anak</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-read">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
     </div>
   </section><!-- End Berita Acara Section -->
@@ -181,98 +227,57 @@
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container">
-
-      <div class="section-title" data-aos="fade-up">
-        <h2>Contact Us</h2>
-      </div>
-
-      <div class="row">
+      <div class="row main justify-content-between">
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="contact-about">
-            <img src="img/logo-silasi.png" class="img-fluid animated" alt="">
+            <h1><b>SILASI</b></h1>
             <p>SILASI merupakan website pelayanan administrasi di tingkat Kelurahan Kudaile. Website ini
               dapat melayani warga dalam mengurus surat-menyurat secara online.</p>
+          </div>
+          <div class="copyright">
+            &copy; Copyright <strong>SILASI</strong>. All Rights Reserved
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
           <div class="info">
-            <div>
-              <ion-icon class="icon" name="location-outline"></ion-icon>
-              <p>Jl. KH. Agus Salim, Kudaile, Slawi, Kab. Tegal</p>
+            <div class="d-flex mb-5">
+              <img src="img/telepon.png" alt="">
+              <div class="keterangan">
+                <p><b>Nomor Telepon</b></p>
+                <p>+62 896-6927-xxxx</p>
+              </div>
             </div>
 
-            <div>
-              <ion-icon class="icon" name="mail-outline"></ion-icon>
-              <p>info@example.com</p>
+            <div class="d-flex mb-5">
+              <img src="img/jam.png" alt="">
+              <div class="keterangan">
+                <p><b>Waktu Operasional</b></p>
+                <p>Senin-Jumat (08.00-16.00)</p>
+              </div>
             </div>
 
-            <div>
-              <ion-icon class="icon" name="call-outline"></ion-icon>
-              <p>+1 5589 55488 55s</p>
+            <div class="d-flex mb-5">
+              <img src="img/lokasi.png" alt="">
+              <div class="keterangan">
+                <p><b>Alamat</b></p>
+                <p>Jl. KH Agus Salim, Kudaile, Kec.Slawi, Kab.Tegal</p>
+              </div>
             </div>
-
           </div>
         </div>
-
-        <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
       </div>
 
     </div>
   </section><!-- End Contact Section -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright">
-            &copy; Copyright <strong>SILASI</strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            Designed by Hasna Rizki Violina
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
 
   <!-- JS Files -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="script.js"></script>
 </body>
 

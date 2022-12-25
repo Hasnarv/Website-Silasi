@@ -52,21 +52,21 @@
                 <label for="input-1">Keperluan</label>
                 <input type="text" class="input-1" placeholder="Masukkan keperluan Anda">
 
-                <button class="btn btn-lihat">Submit</button>
+                <button class="btn btn-lihat" id="submit">Submit</button>
             </div>
 
             <div class="list-surat d-flex">
                 <div class="left">
-                    <div class="item-surat">Surat Waris</div>
-                    <div class="item-surat">Surat Keterangan Domisili</div>
-                    <div class="item-surat">Surat Keterangan Kematian</div>
-                    <div class="item-surat">Surat Keterangan Kelahiran</div>
+                    <div id="item-surat1" class="item-surat">Surat Waris</div>
+                    <div id="item-surat2" class="item-surat">Surat Keterangan Domisili</div>
+                    <div id="item-surat3" class="item-surat">Surat Keterangan Kematian</div>
+                    <div id="item-surat4" class="item-surat">Surat Keterangan Kelahiran</div>
                 </div>
                 <div class="right">
-                    <div class="item-surat">Surat Keterangan Penghasilan</div>
-                    <div class="item-surat">Surat Pernyataan Tidak Sengketa</div>
-                    <div class="item-surat">Surat Pengantar SKCK</div>
-                    <div class="item-surat">Surat Pengantar Izin Keramaian</div>
+                    <div id="item-surat5" class="item-surat">Surat Keterangan Penghasilan</div>
+                    <div id="item-surat6" class="item-surat">Surat Pernyataan Tidak Sengketa</div>
+                    <div id="item-surat7" class="item-surat">Surat Pengantar SKCK</div>
+                    <div id="item-surat8" class="item-surat">Surat Pengantar Izin Keramaian</div>
                 </div>
             </div>
         </div>
@@ -92,7 +92,23 @@
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('submit').addEventListener('click', () => {
+            Swal.fire({
+              title: "Berhasil",
+              text: "Permohonan surat Anda telah dikirim dengan nomor id=151120221",
+              icon: 'success',
+              confirmButtonColor: '#092C4C',
+              allowOutsideClick: false
+            })
+        })
+
+        // document.getElementById('item-surat2').addEventListener('click', () => {
+            
+        // })
+      </script>
 </body>
 
 </html>
