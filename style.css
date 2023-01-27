@@ -317,26 +317,6 @@ section {
       width: 80%;
     }
   }
-  
-  @-webkit-keyframes up-down {
-    0% {
-      transform: translateY(10px);
-    }
-  
-    100% {
-      transform: translateY(-10px);
-    }
-  }
-  
-  @keyframes up-down {
-    0% {
-      transform: translateY(10px);
-    }
-  
-    100% {
-      transform: translateY(-10px);
-    }
-  }
 
 /*--------------------------------------------------------------
 # Services
@@ -445,28 +425,11 @@ section {
   /*--------------------------------------------------------------
 # Berita Acara
 --------------------------------------------------------------*/
-/* .right-berita {
-  height: 40em;
-  overflow: scroll;
-}
-
-.right-berita .card {
-  margin-bottom: 2em;
-}
-
-.btn-read {
-  background-color: #092C4C;
-  color: white;
-}
-.btn-read:hover {
-  background-color: #f88520;
-  color: white;
-} */
-.more-services {
+.more-news {
   padding-top: 20px;
 }
 
-.more-services .card {
+.more-news .card {
   border: 0;
   padding: 160px 20px 20px 20px;
   position: relative;
@@ -476,7 +439,7 @@ section {
   background-position: center center;
 }
 
-.more-services .card-body {
+.more-news .card-body {
   z-index: 10;
   background: rgba(255, 255, 255, 0.9);
   padding: 15px 30px;
@@ -492,21 +455,21 @@ section {
   color: #7f7f7f;
 }
 
-.more-services .card-title {
+.more-news .card-title {
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.more-services .card-title a {
+.more-news .card-title a {
   color: #222222;
   text-decoration: none;
 }
 
-.more-services .card-text {
+.more-news .card-text {
   color: #5e5e5e;
 }
 
-.more-services .read-more a {
+.more-news .read-more a {
   color: #777777;
   /* text-transform: uppercase; */
   font-weight: 600;
@@ -514,30 +477,30 @@ section {
   transition: 0.4s;
 }
 
-.more-services .read-more a:hover {
+.more-news .read-more a:hover {
   text-decoration: underline;
 }
 
-.more-services .card:hover .card-body {
+.more-news .card:hover .card-body {
   background: #092C4C;
 }
 
-.more-services .card:hover .read-more a,
-.more-services .card:hover .card-title,
-.more-services .card:hover .card-title a,
-.more-services .card:hover .card-text {
+.more-news .card:hover .read-more a,
+.more-news .card:hover .card-title,
+.more-news .card:hover .card-title a,
+.more-news .card:hover .card-text {
   color: #fff;
 }
 
 /*--------------------------------------------------------------
-# Contact
+# footer
 --------------------------------------------------------------*/
-.contact .contact-about{
+.footer .footer-about{
     margin-top: 3em;
     color: #fff;
   }
 
-.contact .main {
+.footer .main {
   border: 1px solid;
   margin: 0px -112px;
   margin-top: 10r0px;
@@ -546,7 +509,7 @@ section {
   margin-bottom: -50px;
 }
   
-  .contact .contact-about p {
+  .footer .footer-about p {
     font-size: 14px;
     line-height: 24px;
     font-family: "Raleway", sans-serif;
@@ -557,13 +520,13 @@ section {
   }
   
   
-  .contact .info {
+  .footer .info {
     margin-top: 3em;
     color: #fff;
     margin-left: -7em;
   }
   
-  .contact .info p {
+  .footer .info p {
     padding: 0 0 0 20px;
     margin-top: -10px;
     line-height: 40px;
@@ -572,23 +535,19 @@ section {
     
   }
 
-  .contact .copyright {
+  .footer .copyright {
     color: white;
     margin-top: 5em;
   }
 
-  .contact .info img {
+  .footer .info img {
     height: 3em;
   }
 
-  .contact .info .keterangan p {
+  .footer .info .keterangan p {
     margin-bottom: -1em;
   }
 
-  
-  /*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 #footer {
     background: #092C4C;
     box-shadow: -4px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -607,14 +566,15 @@ section {
   # Lihat Hasil
   --------------------------------------------------------------*/
   .img-letter {
-    margin: 100px auto;
+    margin: 8em auto;
+    width: 60%;
     margin-bottom: 0px;
   }
 
   .get-letter input {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 0.5em 2em;
     border-radius: 15px;
     border: 1px solid #c4c4c4;
   }
@@ -626,8 +586,8 @@ section {
   .btn-lihat {
     background-color: #092C4C;
     margin: 15px auto;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 0.5em 2em;
+    border-radius: 15px;
     width: fit-content;
     color: white;
   }
@@ -636,6 +596,38 @@ section {
     background-color: #f88520;
     color: white;
   }
+
+  /* @media (max-width: 575px) {
+    .get-letter .img-letter {
+      margin-top: 15em;
+      margin-left: -1em;
+      width: 160%;
+    }
+
+    .get-letter input {
+      width: 140%;
+    }
+    .btn-lihat {
+      margin: 15px auto;
+      padding: 0.5em 1em;
+    }
+  } */
+  /* @media (max-width: 575px) {
+    .get-letter .img-letter {
+      margin-top: 15em;
+      margin-left: -5em;
+      width: 250%;
+    }
+    .get-letter input {
+      width: 200%;
+      margin-left: -3em;
+      padding: 0.5em;
+    }
+    .btn-lihat {
+      margin: 15px auto;
+      padding: 0.5em 1em;
+    }
+  } */
 
   /*--------------------------------------------------------------
   # Pengajuan
@@ -654,7 +646,7 @@ section {
   }
   .input-1 {
     border: 1px solid #c4c4c4;
-    padding: 8px 20px;
+    padding: 8px 50px;
     border-radius: 15px;
     margin: 5px 0;
   }
