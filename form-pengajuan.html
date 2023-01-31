@@ -18,32 +18,34 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container navbar-expand-lg">
-          <nav class="navbar">
-            <div class="logo">
-              <img src="img/logo-silasi.png" alt="">
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-              <ul id="navbar" class="navbar-nav justify-content-center mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link scrollto" aria-current="page" href="index.html#hero">Beranda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link scrollto" href="index.html#services">Layanan</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link scrollto" href="index.html#berita">Berita Acara</a>
-                </li>
-                <li>
-                  <a class="login scrollto scrollto" href="login.html">Masuk</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="img/logo-silasi.png" alt="">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+                    <ul id="navbar" class="navbar-nav justify-content-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" aria-current="page" href="index.html#hero">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="index.html#services">Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="index.html#berita">Berita Acara</a>
+                        </li>
+                        <li>
+                            <a class="login scrollto scrollto" href="login.html">Masuk</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </header>
+    </header>
     <!-- End Header -->
 
     <!-- ======= Konten ======= -->
@@ -55,6 +57,9 @@
 
                 <label for="input-1">No KTP/NIK Pemohon</label>
                 <input type="text" class="input-1" placeholder="Masukkan nomor NIK Anda">
+
+                <label for="input-1">Nomor Telepon</label>
+                <input type="text" class="input-1" placeholder=" Masukkan nomor telepon aktif">
 
                 <label for="input-1">Nama Pemohon</label>
                 <input type="text" class="input-1" placeholder=" Masukkan nama Anda">
@@ -70,18 +75,24 @@
                 <div class="row">
                     <div class="col-lg-6 left">
                         <div id="item-surat1" class="item-surat" onclick="onClickSurat1()">Surat Waris</div>
-                        <div id="item-surat2" class="item-surat" onclick="onClickSurat2()">Surat Keterangan Domisili</div>
-                        <div id="item-surat3" class="item-surat" onclick="onClickSurat3()">Surat Keterangan Kematian</div>
-                        <div id="item-surat4" class="item-surat" onclick="onClickSurat4()">Surat Keterangan Kelahiran</div>
+                        <div id="item-surat2" class="item-surat" onclick="onClickSurat2()">Surat Keterangan Domisili
+                        </div>
+                        <div id="item-surat3" class="item-surat" onclick="onClickSurat3()">Surat Keterangan Kematian
+                        </div>
+                        <div id="item-surat4" class="item-surat" onclick="onClickSurat4()">Surat Keterangan Kelahiran
+                        </div>
                     </div>
                     <div class="col-lg-6 right">
-                        <div id="item-surat5" class="item-surat" onclick="onClickSurat5()">Surat Keterangan Penghasilan</div>
-                        <div id="item-surat6" class="item-surat" onclick="onClickSurat6()">Surat Pernyataan Tidak Sengketa</div>
+                        <div id="item-surat5" class="item-surat" onclick="onClickSurat5()">Surat Keterangan Penghasilan
+                        </div>
+                        <div id="item-surat6" class="item-surat" onclick="onClickSurat6()">Surat Pernyataan Tidak
+                            Sengketa</div>
                         <div id="item-surat7" class="item-surat" onclick="onClickSurat7()">Surat Pengantar SKCK</div>
-                        <div id="item-surat8" class="item-surat" onclick="onClickSurat8()">Surat Pengantar Izin Keramaian</div>
+                        <div id="item-surat8" class="item-surat" onclick="onClickSurat8()">Surat Pengantar Izin
+                            Keramaian</div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -112,47 +123,47 @@
     <script>
         document.getElementById('submit').addEventListener('click', () => {
             Swal.fire({
-              title: "Berhasil",
-              text: "Permohonan surat Anda telah dikirim dengan nomor id=151120221",
-              icon: 'success',
-              confirmButtonColor: '#092C4C',
-              allowOutsideClick: false
+                title: "Berhasil",
+                text: "Permohonan surat Anda telah dikirim dengan nomor id=151120221",
+                icon: 'success',
+                confirmButtonColor: '#092C4C',
+                allowOutsideClick: false
             })
         })
 
-        function onClickSurat1(){
+        function onClickSurat1() {
             document.querySelector('#namaSurat').innerHTML = '<h6>Surat Waris</h6>';
             namaSurat.style.cssText = "text-align: center;";
         }
-        function onClickSurat2(){
+        function onClickSurat2() {
             document.querySelector('#namaSurat').innerHTML = '<h6>Surat Keterangan Domisili</h6>';
             namaSurat.style.cssText = "text-align: center;";
         }
-        function onClickSurat3(){
+        function onClickSurat3() {
             document.querySelector('#namaSurat').innerHTML = '<h6>Surat Keterangan Kematian</h6>';
             namaSurat.style.cssText = "text-align: center;";
         }
-        function onClickSurat4(){
+        function onClickSurat4() {
             document.querySelector('#namaSurat').innerHTML = '<h6>Surat Keterangan Kelahiran</h6>';
             namaSurat.style.cssText = "text-align: center;";
         }
-        function onClickSurat5(){
+        function onClickSurat5() {
             document.querySelector('#namaSurat').innerHTML = '<h6>Surat Keterangan Penghasilan</h6>';
             namaSurat.style.cssText = "text-align: center;";
         }
-        function onClickSurat6(){
+        function onClickSurat6() {
             document.querySelector('#namaSurat').innerHTML = '<h6>Surat Pernyataan Tidak Sengketa</h6>';
             namaSurat.style.cssText = "text-align: center;";
         }
-        function onClickSurat7(){
+        function onClickSurat7() {
             document.querySelector('#namaSurat').innerHTML = '<h6>Surat Pengantar SKCK</h6>';
             namaSurat.style.cssText = "text-align: center;";
         }
-        function onClickSurat8(){
+        function onClickSurat8() {
             document.querySelector('#namaSurat').innerHTML = '<h6>Surat Pengantar Izin Keramaian</h6>';
             namaSurat.style.cssText = "text-align: center;";
         }
-      </script>
+    </script>
 </body>
 
 </html>

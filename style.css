@@ -111,8 +111,6 @@ section {
     font-size: 15px;
     font-weight: 400;
     color: #555555;
-    white-space: nowrap;
-    transition: 0.3s;
   }
   
   .navbar a:hover,
@@ -245,7 +243,6 @@ section {
     overflow: hidden;
     background: #fff;
     box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-    transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
   }
@@ -270,7 +267,6 @@ section {
     width: 100%;
     height: 100%;
     border-radius: 0px;
-    color: #092C4C;
   }
   
   .services .icon {
@@ -282,7 +278,6 @@ section {
     width: 60px;
     height: 60px;
     background: #092C4C;
-    transition: all 0.3s ease-in-out;
   }
 
   .services .item-icon {
